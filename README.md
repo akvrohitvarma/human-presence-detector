@@ -2,7 +2,7 @@
 
 ### 🌟 Project Overview
 
-**PowDew-Sense** is an innovative, cost-effective project that demonstrates **Human Presence Detection** without relying on traditional external sensors (like PIR, ultrasonic, or dedicated mmWave radar). It converts a core concept from wireless communications—**RF Power Density (PowDew) Attenuation**—into a practical, functional sensing tool.
+**PowDew-Sense** is an innovative, cost-effective project that demonstrates **Human Presence Detection** without relying on traditional external sensors (like PIR, ultrasonic, or dedicated mmWave radar). It converts a core concept from wireless communications **RF Power Density (PowDew) Attenuation** into a practical, functional sensing tool.
 
 The system uses an **ESP8266** microcontroller connected to a mobile phone's Wi-Fi hotspot to measure the real-time **Received Signal Strength Indicator (RSSI)**. When a person steps between the two devices, their body absorbs and reflects the 2.4 GHz radio waves, causing a predictable, sharp drop in the measured RSSI (the "PowDew drop"). This drop signals the presence of a human.
 
@@ -31,8 +31,8 @@ The project leverages the phenomenon of **signal attenuation** caused by obstacl
 * **ESP8266 Board Support Package**
 * **Libraries:**
 * `ESP8266WiFi.h`
-* `ESPAsyncTCP.h`
-* `ESPAsyncWebServer.h` (Crucial for non-blocking Web Server)
+* [`ESPAsyncTCP.h`] (https://github.com/me-no-dev/ESPAsyncTCP)
+* [`ESPAsyncWebServer.h`] (https://github.com/me-no-dev/ESPAsyncWebServer)
 
 ### ⚙️ How It Works (System Architecture)
 
