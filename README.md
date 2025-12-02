@@ -1,18 +1,18 @@
-# 📡 PowDew-Sense: Zero-Component Human Presence Detector
+# 📡 SenseWave: Zero-Component Human Presence Detector
 
 ### 🌟 Project Overview
 
-**PowDew-Sense** is an innovative, cost-effective project that demonstrates **Human Presence Detection** without relying on traditional external sensors (like PIR, ultrasonic, or dedicated mmWave radar). It converts a core concept from wireless communications **RF Power Density (PowDew) Attenuation** into a practical, functional sensing tool.
+**SenseWave** is an innovative, cost-effective project that demonstrates **Human Presence Detection** without relying on traditional external sensors (like PIR, ultrasonic, or dedicated mmWave radar). It converts a core concept from wireless communications **RF Power Density (SenseWave) Attenuation** into a practical, functional sensing tool.
 
-The system uses an **ESP8266** microcontroller connected to a mobile phone's Wi-Fi hotspot to measure the real-time **Received Signal Strength Indicator (RSSI)**. When a person steps between the two devices, their body absorbs and reflects the 2.4 GHz radio waves, causing a predictable, sharp drop in the measured RSSI (the "PowDew drop"). This drop signals the presence of a human.
+The system uses an **ESP8266** microcontroller connected to a mobile phone's Wi-Fi hotspot to measure the real-time **Received Signal Strength Indicator (RSSI)**. When a person steps between the two devices, their body absorbs and reflects the 2.4 GHz radio waves, causing a predictable, sharp drop in the measured RSSI (the "SenseWave drop"). This drop signals the presence of a human.
 
-### 🔬 Core Principle: PowDew Sensing
+### 🔬 Core Principle: Wifi RSSI Sensing
 
 The project leverages the phenomenon of **signal attenuation** caused by obstacles.
 
-1. **Stable Baseline:** When the line of sight is clear, the signal strength (RSSI) is high and stable (e.g., $\approx -50\text{ dBm}$). This represents the ambient **PowDew** at the receiver.
+1. **Stable Baseline:** When the line of sight is clear, the signal strength (RSSI) is high and stable (e.g., $\approx -50\text{ dBm}$). This represents the ambient **SenseWave** at the receiver.
 2. **The Block:** A human body, being largely water, acts as an effective radio frequency absorber.
-3. **The PowDew Drop:** When a person blocks the signal path, the absorbed energy causes a significant, measurable drop in the RSSI (e.g., to $\approx -70\text{ dBm}$).
+3. **The SenseWave Drop:** When a person blocks the signal path, the absorbed energy causes a significant, measurable drop in the RSSI (e.g., to $\approx -70\text{ dBm}$).
 4. **Sensing:** The system interprets this sharp, consistent drop as **Human Presence**.
 
 ### 🛠️ Requirements
@@ -50,9 +50,9 @@ The system works by having the ESP8266 act as a client connected to the phone's 
 
 | RSSI Range (dBm) | Status (Interpretation) | PWA Visual |
 | :--- | :--- | :--- |
-| $\text{RSSI} > -50$ | **High PowDew (Clear)** | Green |
-| $-75 < \text{RSSI} \le -50$ | **Medium PowDew (Attenuated)** | Yellow |
-| $\text{RSSI} \le -75$ | **Low PowDew (Presence Detected)** | Red |
+| $\text{RSSI} > -50$ | **High SenseWave (Clear)** | Green |
+| $-75 < \text{RSSI} \le -50$ | **Medium SenseWave (Attenuated)** | Yellow |
+| $\text{RSSI} \le -75$ | **Low SenseWave (Presence Detected)** | Red |
 
 ### 🚀 Setup Instructions (Quick Start)
 
