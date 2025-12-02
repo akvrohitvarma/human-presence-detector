@@ -31,8 +31,8 @@ The project leverages the phenomenon of **signal attenuation** caused by obstacl
 * **ESP8266 Board Support Package**
 * **Libraries:**
 * `ESP8266WiFi.h`
-* [`ESPAsyncTCP.h`] (https://github.com/me-no-dev/ESPAsyncTCP)
-* [`ESPAsyncWebServer.h`] (https://github.com/me-no-dev/ESPAsyncWebServer)
+* [`ESPAsyncTCP.h`](https://github.com/me-no-dev/ESPAsyncTCP): Required for non-blocking TCP operations and connections.
+* [`ESPAsyncWebServer.h`](https://github.com/me-no-dev/ESPAsyncWebServer): The core library used to host the web server and the PWA interface on the ESP8266.
 
 ### ⚙️ How It Works (System Architecture)
 
