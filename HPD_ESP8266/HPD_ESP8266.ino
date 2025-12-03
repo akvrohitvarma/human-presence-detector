@@ -11,8 +11,8 @@
 
 // --- CRITICAL CONFIGURATION ---
 // Update these to match your Phone's Hotspot exactly
-const char* ssid = "kumara";    
-const char* password = "123456789";   
+const char* ssid = "YOUR HOTSPOT NAME";    
+const char* password = "YOUR HOTSPOT PASSWORD";   
 
 AsyncWebServer server(80);
 
